@@ -22,6 +22,7 @@ current_day = 1
 
 out_file = open(OUTPUT_FILE, 'w')
 
+
 while price >= MIN_PRICE and price <= MAX_PRICE:
     price_change = 0
     # generate a random integer of 1 or 2
@@ -37,6 +38,7 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
 
     price *= (1 + price_change)
     print("On day {0} price is ${1:.2f}".format(current_day, price), file=out_file)
-    current_day +=1
+    current_day += 1
 
 out_file.close()
+
