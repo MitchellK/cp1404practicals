@@ -2,18 +2,16 @@
 Mitchell
 """
 
-MIN_LENGTH = 6
-
 
 def main():
-    user_password = password_entry()
+    user_password = get_password()
     display_pass(user_password)
 
 
-def password_entry():
+def get_password():
     new_pass = ""
-    while len(new_pass) < MIN_LENGTH:
-        new_pass = input("Please enter a new password that is at least {} characters in length".format(MIN_LENGTH))
+    while len(new_pass) < 6:
+        new_pass = input("Please enter a new password that is at least 6 characters in length")
     return new_pass
 
 
@@ -23,4 +21,3 @@ def display_pass(password):
 
 
 main()
-
