@@ -4,7 +4,7 @@ The program then generates that many lines of output.
 Each line consists of 6 random numbers between 1 and 45.
 These values should be stored as CONSTANTS.
 - Each line (quick pick) should not contain any repeated number.
-- Each line of numbers should be displayed in sorted (ascending) order.
+- Each line of numbers should be displayed in sorted (ascending) order
 """
 
 import random
@@ -21,7 +21,8 @@ def main():
     number_of_picks = get_number_of_picks()
     for i in range(number_of_picks):
         quick_pick = generate_picks()
-        display_picks(quick_pick)
+        quick_pick.sort()
+        print(" ".join("{:2}".format(number) for number in quick_pick))
 
 
 # get number of picks and return them, along with error checking.
@@ -43,12 +44,6 @@ def generate_picks():
             number = random.randint(LOWEST_PICK_NUMBER, HIGHEST_PICK_NUMBER)
         new_pick.append(number)
     return new_pick
-
-
-# sorts the picks and then displays the picks lowest to highest
-def display_picks(pick):
-    pick.sort()
-    print(" ".join("{:2}".format(number) for number in pick))
 
 
 main()

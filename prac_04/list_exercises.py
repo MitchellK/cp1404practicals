@@ -1,6 +1,6 @@
 """
 BASIC LIST OPERATIONS
-The program should then output various interesting things
+The program should then output various interesting things.
 """
 
 

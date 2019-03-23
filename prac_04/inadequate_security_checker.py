@@ -1,5 +1,5 @@
 """
-Ask the user for their username. If the username is in the above list of authorised users, print "Access granted", otherwise print "Access denied"
+Ask the user for their username. If the username is in the above list of authorised users, print "Access granted",otherwise print "Access denied"
 """
 
 # authorised list of users

@@ -1,8 +1,8 @@
 """
-Run this program, and it will explain each question and what i've done :)
+Run this program, it will explain each question and what i've done :)
 """
 
-numbers = [3,1,4,1,5,9,2]
+numbers = [3, 1, 4, 1, 5, 9, 2]
 
 print("""This is the written test. The questions are printed, and my answer is underneath.
 The list we are using is numbers = {}\n""".format(numbers))
