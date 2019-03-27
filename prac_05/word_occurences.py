@@ -9,8 +9,12 @@ Write a program to:
 """
 
 # Prompt for text
-
+string = input("enter a phrase:")
 # place each word into a dictionary with a count of 1, check if it exists, if so add a count
+new_list = []
+for each in string:
+    new_list.append(each)
+print(new_list)
 
 # print the dictionary (each word and count)
 # add in sort and align them to a column(use a variable that calculates the longest word)
