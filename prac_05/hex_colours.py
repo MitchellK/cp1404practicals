@@ -8,3 +8,19 @@ Create a program that allows you to:
 - Allow the user to enter names until they enter a blank one to stop the loop
 """
 
+COLOURS = {"AliceBlue": "#f0f8ff", "AntiqueWhite": "#faebd7", "beige": "#f5f5dc", "black": "#000000",
+           "BlanchedAlmond": "#ffebcd", "BlueViolet": "#8a2be2", "burlywood": "#deb887",
+           "CadetBlue": "#5f9ea0", "chocolate": "#d2691e", "CornflowerBlue": "#6495ed"}
+
+print("The available colours are:")
+for entry in COLOURS:
+    print(entry)
+
+user_selection = input("Please type the name of a colour to return it's code:")
+while user_selection != "":
+    if user_selection in COLOURS:
+        print("The code for {} is: {}".format(user_selection, COLOURS[user_selection]))
+        pass
+    else:
+        print("Invalid selection, choose from available colours \nnote: case is sensitive")
+    user_selection = input("Please type the name of a colour to return it's code:")
