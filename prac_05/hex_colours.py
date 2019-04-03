@@ -20,7 +20,6 @@ user_selection = input("Please type the name of a colour to return it's code:")
 while user_selection != "":
     if user_selection in COLOURS:
         print("The code for {} is: {}".format(user_selection, COLOURS[user_selection]))
-        pass
     else:
         print("Invalid selection, choose from available colours \nnote: case is sensitive")
     user_selection = input("Please type the name of a colour to return it's code:")
