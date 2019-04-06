@@ -1,6 +1,8 @@
-"""CP1404/CP5632 Practical - Programming Language Do From Scratch Exercise"""
+"""CP1404/CP5632 Practical - Programming Language Do From Scratch Exercise
+program to test guitar class
+"""
 
-from prac_06.guitar import Guitar
+from prac_06.guitar_class import Guitar
 
 gibson = Guitar("Gibson L-5 CES", 1922, 16035.40)
 ibanez = Guitar("Ibanez S6570SK Prestige", 2005, 2799.00)
