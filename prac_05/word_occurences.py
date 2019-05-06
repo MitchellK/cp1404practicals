@@ -18,13 +18,16 @@ def main():
     longest_word = get_longest_word_length(dictionary_of_phrase)
     phrase_as_list = initialize_sorting_list(dictionary_of_phrase)
 
+    for i in phrase_as_list:
+        print("{i}".join(" ", end=""))
+
     # Sorting the list by key and then printing
     phrase_as_list.sort()
     print("Below is the dictionary sorted by key:")
     for i in phrase_as_list:
         print("{:{}}: {}".format(i[0], longest_word, i[1]))
 
-    #sorting the list by value and then printing
+    # sorting the list by value and then printing
     phrase_as_list.sort(key=itemgetter(1), reverse=True)
     print("Below is the dictionary sorted by value:")
     for i in phrase_as_list:
